@@ -100,6 +100,27 @@ body {
   color: #fb7413;
   background-color: #fff;
 }
+
+.rating-num--1:hover + .rating-num--2 {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+
+.rating-num--2:hover + .rating-num--3 {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+
+.rating-num--3:hover + .rating-num--4 {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+
+.rating-num--4:hover + .rating-num--5 {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+
 /* Thank You Card */
 
 .container--thankyou {
