@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  background-color: rgb(18, 20, 23);
+  transition: 0.3 all;
+}
+
+.container {
+  margin: 50vh auto;
+  transform: translate(0, -50%);
+  max-width: 33rem;
+  border-radius: 1.8rem;
+}
+
+/* Rating Card */
+
+.container--rating {
+  padding: 2.6rem;
+  background-color: #1f252d;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-box {
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  display: inline-block;
+  background-color: rgba(63, 71, 81, 0.4);
+  padding: 1.4rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.header--rating {
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.text--rating {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #959eac;
+  margin-bottom: 2rem;
+}
+
+.rating-nums {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.rating-num {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(63, 71, 81, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+}
+
+.rating-num:hover {
+  background-color: #fb7413;
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.2rem 0;
+  border-radius: 10rem;
+  color: #fff;
+  background-color: #fb7413;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fb7413;
+  background-color: #fff;
+}
+/* Thank You Card */
+
+.container--thankyou {
+  display: none;
+}
