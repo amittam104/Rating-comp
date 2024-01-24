@@ -78,10 +78,10 @@ body {
   cursor: pointer;
 }
 
-.rating-num:hover {
+/* .rating-num:hover {
   background-color: #fb7413;
   color: #fff;
-}
+} */
 
 .btn {
   width: 100%;
@@ -101,7 +101,7 @@ body {
   background-color: #fff;
 }
 
-.rating-num--1:hover + .rating-num--2 {
+/* .rating-num--1:hover + .rating-num--2 {
   background-color: hsl(216, 12%, 54%);
   color: #fff;
 }
@@ -117,6 +117,16 @@ body {
 }
 
 .rating-num--4:hover + .rating-num--5 {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+} */
+
+.main-hover {
+  background-color: #fb7413;
+  color: #fff;
+}
+
+.side-hover {
   background-color: hsl(216, 12%, 54%);
   color: #fff;
 }
