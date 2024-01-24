@@ -27,7 +27,8 @@ body {
 
 /* Rating Card */
 
-.container--rating {
+.container--rating,
+.container--thankyou {
   padding: 2.6rem;
   background-color: #1f252d;
   display: flex;
@@ -131,8 +132,49 @@ body {
   color: #fff;
 }
 
+.click-color {
+  background-color: #fb7413;
+  color: #fff;
+}
 /* Thank You Card */
-
 .container--thankyou {
+  width: 31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-tankyou {
+  width: 120px;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  line-height: 1;
+  letter-spacing: 0.4px;
+  background-color: rgba(63, 71, 81, 0.4);
+  color: hsla(25, 97%, 53%, 0.666);
+  padding: 0.7rem 2rem 0.4rem 2rem;
+  border-radius: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.header--thankyou {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+
+.text--thankyou {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #959eac;
+  margin-bottom: 1.6rem;
+}
+
+.hidden {
   display: none;
 }

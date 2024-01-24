@@ -3,6 +3,8 @@
 const ratingEl = document.querySelectorAll(".rating-num");
 const finalRatingEl = document.querySelector(".rating");
 const btnSubmit = document.querySelector(".btn");
+const ratingConatinerEl = document.querySelector(".container--rating");
+const thankYouConatinerEl = document.querySelector(".container--thankyou");
 
 // Mouse hover over rating numbers
 ratingEl.forEach(function (num, i) {
@@ -19,12 +21,35 @@ ratingEl.forEach(function (num, i) {
   });
 });
 
+// Submit Rating
+let ratingNumber;
+
 ratingEl.forEach(function (element, i) {
   element.addEventListener("click", function () {
-    let ratingNumber = element.textContent;
-    btnSubmit.addEventListener("click", function () {
-      console.log(`You selected ${ratingNumber} out of 5`);
-      finalRatingEl.textContent = `You selected ${i + 1} out of 5`;
-    });
+    ratingNumber = element.textContent;
+    element.classList.add("click-color");
+  });
+});
+
+// Display rating
+btnSubmit.addEventListener("click", function () {
+  if (ratingNumber) {
+    finalRatingEl.textContent = `You selected ${ratingNumber} out of 5`;
+  } else {
+    finalRatingEl.textContent = `Select the appropriate rating`;
+  }
+
+  ratingConatinerEl.classList.toggle("hidden");
+  thankYouConatinerEl.classList.toggle("hidden");
+  ratingEl.classList.remove("click-color");
+});
+
+// Revert back to rating option
+thankYouConatinerEl.addEventListener("click", function () {
+  ratingConatinerEl.classList.toggle("hidden");
+  thankYouConatinerEl.classList.toggle("hidden");
+
+  ratingEl.forEach(function (element, i) {
+    element.classList.remove("click-color");
   });
 });
